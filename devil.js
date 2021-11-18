@@ -939,35 +939,25 @@ devil.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =` *─ 𝙵𝙰𝚉𝚁𝙸𝙽 𝚂𝙷𝙾𝙿 ─*
+               menu =` *─ Prisonstoretopup ─*
                
  𝘏𝘢𝘭𝘭𝘰 𝘒𝘢𝘬 *${pushname}*              
-┃⬡ _Owner :_ wa.me//6283161562525
-┃⬡ _IG : fazrin_ezz_
-┃⬡ _YT : Fazrin Ezz_
-┃⬡ _WEB : https://fazrinshop.rf.gd_
+┃⬡ _Owner :_ wa.me//62895347329239
+┃⬡ _IG : @prisonstoretopup
 ┗⬣
 
 「 *PRODUK TOKO* 」
 ✘ *Layanan TopUp* ✘
-_❏ FreeFiree_
 _❏ Mobile Legend_
-
-✘ *Voucher Game* ✘
-_❏ Garena Shell_
-
-✘ *App Premium* ✘
-_❏ YouTube Premium_
+ Paket Fast & Semi Fast
 ├───
 ⬣ #menu =  *Menu Utama*
-⬣ #ff = *List Diamond FreeFire*
 ⬣ #ml = *List Diamond MLBB*
-⬣ #gs = *List Garena Shell*
-⬣ #otp = *List OTP / NOKOS +62l*
-⬣ #ytprem = *YouTube Premium*
+⬣ #ml1 = *List DM ML Fast*
+⬣ #ml2 = *List DM ML Semi Fast*
 ⬣ #pay = *Metode Pembayaran*
 │
-└──「 \`\`\`EZZ-BOT\`\`\` 」`                          
+└──「 \`\`\`PRISON-BOT\`\`\` 」`                          
                buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '☰ PRICE LIST'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'💰PEMBAYARAN💰'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'OWNER👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
                imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
@@ -975,18 +965,17 @@ _❏ YouTube Premium_
                buttonsMessage = {
                contentText: `${menu}`,
                footerText: ` ── *List Produk* ──
-${prefix}ff
 ${prefix}ml
-${prefix}gs
-${prefix}ytprem
-${prefix}otp
+${prefix}ml1
+${prefix}ml2
 
 ── *List Menu* ──
 ${prefix}menu
+${prefix}list
 ${prefix}pay
 ${prefix}owner
 
-𝙱𝚘𝚝𝚣𝚣 𝙱𝚢 𝙵𝚊𝚣𝚛𝚒𝚗
+𝙱𝚘𝚝𝚣𝚣 𝙱𝚢 Prisonstoretopup
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1010,15 +999,16 @@ ${prefix}owner
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =`💰── *𝐌𝐄𝐓𝐎𝐃𝐄 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍* ──💰
-
-*⬣ DANA* || 089630883352 *(ALFI REYHAN)*
-*⬣ SHOPEE PAY* || 083110011351 *(NGAIRAH)*
-*⬣ OVO* || 089630883352 *(ALFI REYHAN)*
-*⬣ GOPAY* || *CHAT ADMIN*
-*⬣ QRIS* || *CHAT ADMIN*
-*⬣ BRI* || 643101028708538 *(ALFI REYHAN)*
-*⬣ ALFA/INDO = CHAT ADMIN*
+               menu =`── *𝐌𝐄𝐓𝐎𝐃𝐄 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍* ──
+*[ Payment Prisonstoretopup ]*  
+ ✓ 💳Bank BCA > 8575319404 
+ ✓ 💳Bank BNI > 0899900643
+✓ 💰Dana > 082399132395
+✓ 💰Gopay > 082399132395
+✓ 💰Ovo > 082399132395
+✓ 💰Shopeepay > 082399132395
+🏦 *PEMBAYARAN ALFAMART,INDOMARET DAN QRIS MINTA KE ADMIN*
+*- Semua a/n Rayana Verry Kusuma -*
 `                          
                buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}menu`,buttonText:{displayText:'MENU AWAL'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
@@ -1026,7 +1016,7 @@ ${prefix}owner
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `*© Prisonstoretopup*
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1040,8 +1030,8 @@ ${prefix}owner
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
-        case 'ff':
-        case 'freefire':               
+        case 'fhf':
+        case 'freeyfire':               
                parseMention = (text = '') => {
                return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                totalChat = await devil.chats.all()
@@ -1084,7 +1074,7 @@ ORDER DM :`
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `*© Prisonstoretopup*
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1098,8 +1088,8 @@ ORDER DM :`
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
-        case 'ml':
-        case 'mlbb':               
+        case 'ml1':
+        case 'mla':               
                parseMention = (text = '') => {
                return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                totalChat = await devil.chats.all()
@@ -1108,46 +1098,43 @@ ORDER DM :`
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =`─ *Mobile Legends* ─
+               menu =`─ *MOBILE LEGENDS FAST A* ─
 
-Via ID+(server)|| 1-5 Menit
-R : 285
-86       💎  =     19.950
-172     💎  =     39.900
-257     💎  =     59.850
-344     💎  =     79.800
-429     💎  =     99.750
-514     💎  =   119.700
-600     💎  =   139.650
-706     💎  =   159.600
-878     💎  =   199.500
-963     💎  =   219.450
-1050   💎  =   239.400
-1220   💎  =   279.300
-1412   💎  =   319.200
-2195   💎  =   474.525
-3073   💎  =   674.025
-3688   💎  =   789.450
-4032   💎  =   869.250
-5532   💎  =1.185.600
-6238   💎  =1.345.200
-9288   💎  =1.975.050
+_Proses 1-5 menit_
+_Via ID dan server_
 
-Starlight          = 131.670
-Starlight plus = 299.250
+86        💎    Rp        19.110
+172      💎    Rp        38.220
+257      💎    Rp        57.330
+344      💎    Rp        76.440
+429      💎    Rp        95.550
+514      💎    Rp      114.660
+600      💎    Rp      133.770
+706      💎    Rp      152.880
+878      💎    Rp      191.100
+963      💎    Rp      210.210
+1050    💎    Rp      229.320
+1220    💎    Rp      267.540
+1412    💎    Rp      305.760
+2195    💎    Rp      454.545
+3688    💎    Rp      756.210
+5532    💎    Rp   1.135.680
+9288    💎    Rp   1.891.890
+SL/TL    =      Rp      126.126
+SL +       =      Rp      286.650
 
 *FORMAT ORDER*
-ID :
-(server):
-NICK :
-ORDER DM :`                          
-               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+Nickname:
+ID (server):
+Order dm:
+Sisa dm:`                          
+               buttons = [{buttonId: `${prefix}ml2`,buttonText:{displayText: 'ML PAKET B'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format1`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
                imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `*© Prisonstoretopup*
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1161,8 +1148,8 @@ ORDER DM :`
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
-        case 'gs':
-        case 'garenashell':               
+        case 'mlb':
+        case 'ml2':               
                parseMention = (text = '') => {
                return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                totalChat = await devil.chats.all()
@@ -1171,20 +1158,38 @@ ORDER DM :`
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =`─ *Garena Shell* ─
-33 : 9.000
-66 : 18.000
-165 : 45.000
-330 : 90.000
- *Stok Selalu READY*
+               menu =`─ *ML B* ─
+*PAKET B SEMIFAST MOBILE LEGEND STOK TERBATAS* 
+VIA ID+(SERVER)
+PROSES 5-10 MENIT Max 24 Jam
+
+39 💎 = Rp 8.500
+65 💎 = Rp 13.860
+92 💎 = Rp 19.371
+133 💎 = Rp 28.140
+266 💎 = Rp 56.280
+400 💎 = Rp 84.500
+534 💎 = Rp 112.560
+670 💎 = Rp 140.700
+1342 💎 = Rp 278.500
+2700 💎 = Rp 555.000
+4150 💎 = Rp 824.500
+7050 💎 = Rp 1.370.000
+
+FORMAR ORDER ⤵️
+NICKNAME :
+ID (SERVER) :
+JUMLAH ORDER :
+SISA DM :
+PAKET ORDER :
 `                          
-               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}format2`,buttonText:{displayText: 'FORMAT ORDER'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
                imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `*© Prisonstoretopup*
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1221,7 +1226,7 @@ ORDER DM :`
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `*© Prisonstoretopup*
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1235,8 +1240,8 @@ ORDER DM :`
 							thumbnail: fs.readFileSync('./media/ganteng.jpg'), }, forwardingScore:508, isForwarded:true, mentionedJid:[Tag + '@s.whatsapp.net', senderr]}})
                             devil.relayWAMessage(prep)
                             break
-        case 'otp':
-        case 'nokos':               
+        case 'mlbb':
+        case 'ml':               
                parseMention = (text = '') => {
                return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                totalChat = await devil.chats.all()
@@ -1245,20 +1250,19 @@ ORDER DM :`
                total = math(`${groups.length}*${privat.length}`)
                timestampe = speed();
                latensie = speed() - timestampe             
-               menu =`─ *OTP / NOKOS* ─
-               
- *OTP +62 /NOKOS :* Rp 1.000/OTP
- 
-• Kartu FRESH OTP
-• Provider Indosat
-• STOK BANYAK *Ready Selalu*            `                          
-               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: '↩️ BACK TO MENU'},type:1},{buttonId:`${prefix}pay`,buttonText:{displayText:'PEMBAYARAN'},type:1},{buttonId: `${prefix}owner`,buttonText:{displayText: 'ADMIN👤'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
+               menu =`─ *💎DIAMOND Mobile Legend💎* ─
+*ML PAKET (A) / FAST*
+ 1-5 Menit || VIA ID+(Server) 
+*ML PAKET (B) / SEMI FAST*
+ 5-10 Menit (max 24 jam || VIA ID +(Server)
+          `                          
+               buttons = [{buttonId: `${prefix}list`,buttonText:{displayText: 'LIST MENU'},type:1},{buttonId:`${prefix}ml1`,buttonText:{displayText:'ML A (FAST)'},type:1},{buttonId: `${prefix}ml2`,buttonText:{displayText: 'ML B (Semi FAST)'},type:1},{buttonId:`${prefix}allmenu`,buttonText:{displayText:'ALLMENU'},type:1}]
 
                imageMsg = (await devil.prepareMessageMedia(fs.readFileSync(`./media/devil.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/devil.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: `© Fazrin Shop
+               footerText: `© Prisonstoretopup 
 `, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1274,8 +1278,8 @@ ORDER DM :`
                             break
         case 'list':
                list = []
-               listmenu = [`ff`,`ml`,`gs`,`yt`,`otp`,`pay`]
-               listmenuu = [`LIST Free Fire`,`LIST MLBB`,`LIST Garena Shell`,`LIST YT Prem`,`OTP/ NOKOS`,`Metode Pembayaran`]
+               listmenu = [`ml1`,`ml2`,`pay`]
+               listmenuu = [`💎 ML A (Fast)`,`💎 ML B (Semi Fast)`,`METODE PEMBAYARAN 💴`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -1784,6 +1788,12 @@ ORDER DM :`
       case 'gopay':
              reply(`GOPAY : 089630883352\n\n A/N Alfi`)
              break  
+                   case 'format1':
+             reply(`*FORMAT ORDER*\n   *ML A (FAST)*\n\nNickname:\nID (server):\nOrder dm: \nSisa dm:`)
+             break  
+             case 'format2':
+             reply(`*FORMAT ORDER*\n   *ML B (Semi FAST)*\n\nNickname:\nID (server):\nOrder dm: \nSisa dm:`)
+             break  
       case 'pulsa':
              reply(`PULSA : 083110011351\n\n KARTU Axis`)
              break
@@ -1832,7 +1842,7 @@ ORDER DM :`
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '© Fazrin Shop ', imageMessage: imageMsg,
+               footerText: '*© Prisonstoretopup* ', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -3238,9 +3248,9 @@ _*Tunggu Proses Upload Media......*_`
              reply(result)
              sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: mek})
              break
-       case 'tiktok': 
-       case 'ttdl':
-             if (!q) return reply('Linknya?')
+       case 'jsis': 
+       case 'hdh':
+             if (!q) return reply('Linknya/napa?')
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
               reply(`PEROSES`)
              anu = await TiktokDownloader(`${q}`)
@@ -4986,7 +4996,7 @@ case 'getvn':
              for (let _ of anu100) {
              devil.sendMessage(_.jid, 
 			{"contentText": `*「 SIARAN SHOP 」*\n\n${body.slice(4)}`,
-			"footerText": '*© Fazrin Shop*',
+			"footerText": '*© Prisonstoretopup*',
 			"buttons": [
 			{"buttonId": `#owner`,
 			"buttonText": {"displayText": "ADMIN👤"
@@ -6198,6 +6208,3 @@ console.log('[',color('TEXT','teal'),']',`Message : ${budy} From`, color(pushnam
         }
 	}
 }
-
-
-
