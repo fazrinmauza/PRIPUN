@@ -904,7 +904,7 @@ function banChat() {
                await sleep(1000)
                txtt =`Hai Kak..... ${pushname}\nItu Ownerku, Mau tau soal apa ya?`
 
-               buttons = [{buttonId: '!youtube',buttonText:{displayText: 'YOUTUBE'},type:1},{buttonId:'!infoig',buttonText:{displayText:'INSTAGRAM'},type:1}]
+               buttons = [{buttonId: '!infoigg',buttonText:{displayText: 'INSTAGRAM 1'},type:1},{buttonId:'!infoig',buttonText:{displayText:'INSTAGRAM 2'},type:1}]
 
                buttonsMessage = {
                contentText: `${txtt}`,
@@ -5917,7 +5917,10 @@ case 'coffe':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'infoig':
-             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/fazrin_ezz`)
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/rayanaverry`)
+             break
+case 'infoigg':
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/prisonstoretopup`)
              break
       case 'grupbot':
              reply('')
@@ -6157,7 +6160,7 @@ reply(ucapan1)
 naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
 return ky_ttt = naa
 }
-ucapan = `*🎳 Game Tictactoe 🎲*
+ucapan = `*?? Game Tictactoe 🎲*
 
 Player1 @${tty.player1.split('@')[0]}=⭕
 Player2 @${tty.player2.split('@')[0]}=❎
